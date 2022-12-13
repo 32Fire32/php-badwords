@@ -16,8 +16,8 @@ Ero uno di quei figli
 Sognatori adolescenti
 Che non vogliono consigli
 E rispondono fra i denti
-Vaffanculo
-Vaffanculo
+vaffanculo
+vaffanculo
 Ma la musica è cattiva
 È una fossa di serpenti
 E per uno che ci arriva
@@ -26,8 +26,8 @@ Mi diceva quella gente
 Che s'intende di canzoni
 Hai la faccia da perdente
 Mi dispiace, non funzioni Masini
-Vaffanculo
-Vaffanculo
+vaffanculo
+vaffanculo
 Non importa se ho pianto e sofferto
 Questa vita fa tutto da sé
 E nella musica ho solo scoperto
@@ -48,8 +48,8 @@ Ma li trovi una mattina
 Con la foto sul giornale
 In quell'ultima vetrina
 Con la voglia di gridare al mondo
-Vaffanculo
-Vaffanculo
+vaffanculo
+vaffanculo
 Mi dimetto da falso poeta
 Da profeta di questo fan club
 Io non voglio insegnarvi la vita
@@ -68,10 +68,9 @@ Finalmente te lo dico
 Con la mia disperazione
 Caro mio peggior nemico
 Travestito da santone
-Vaffanculo
-Vaffanculo";
-$song2 = str_replace($badword, "xxx", $song);
-
+vaffanculo
+vaffanculo";
+$song = str_replace($badword, "xxx", $song);
 ?>
 
 <!DOCTYPE html>
@@ -85,9 +84,7 @@ $song2 = str_replace($badword, "xxx", $song);
 <body>
     <h1>Vaff*** di Marco Masini</h1>
     <p><?php echo $song; ?></p>
-    <p><?php echo $song2; ?></p>
     <h3>Lunghezza del testo: <?php echo strlen($song)?></h3>
-    <h3>Lunghezza del testo censurato: <?php echo strlen($song2)?></h3>
 
 </body>
 </html>
