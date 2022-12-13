@@ -87,5 +87,7 @@ $song2 = str_replace($badword, "xxx", $song);
     <p><?php echo $song; ?></p>
     <p><?php echo $song2; ?></p>
     <h3>Lunghezza del testo: <?php echo strlen($song)?></h3>
+    <h3>Lunghezza del testo censurato: <?php echo strlen($song2)?></h3>
+
 </body>
 </html>
