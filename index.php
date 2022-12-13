@@ -1,4 +1,5 @@
 <?php
+ $badword = $_GET['censura'];
 $song = "Se mi guardo nello specchio
 Con il tempo che è passato
 Sono solo un po' più ricco
@@ -68,7 +69,9 @@ Con la mia disperazione
 Caro mio peggior nemico
 Travestito da santone
 Vaffanculo
-Vaffanculo"
+Vaffanculo";
+$song2 = str_replace($badword, "xxx", $song);
+
 ?>
 
 <!DOCTYPE html>
@@ -82,6 +85,7 @@ Vaffanculo"
 <body>
     <h1>Vaff*** di Marco Masini</h1>
     <p><?php echo $song; ?></p>
+    <p><?php echo $song2; ?></p>
     <h3>Lunghezza del testo: <?php echo strlen($song)?></h3>
 </body>
 </html>
